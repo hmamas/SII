@@ -1,0 +1,11 @@
+{% for line in spreadsheet_Interfaces %}
+
+interface {{ line.Name }}
+no ip address
+shutdown
+{% if 'loopback' in line.Name %}
+exit
+no interface {{ line.Name }}
+{% endif %}
+
+{% endfor %}

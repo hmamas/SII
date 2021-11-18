@@ -1,0 +1,12 @@
+
+interface F1/1
+no ip address
+shutdown
+
+
+interface loopback5
+no ip address
+shutdown
+exit
+no interface loopback5
+

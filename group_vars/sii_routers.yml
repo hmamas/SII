@@ -1,0 +1,12 @@
+---
+#_______ssh_user______and__password
+ansible_user: jon
+ansible_password: 123
+
+#________OS__type_____
+ansible_network_os: ios
+
+#_____for cisco enable methode and enable password
+become: yes
+ansible_become_method: enable
+ansible_become_password: 123

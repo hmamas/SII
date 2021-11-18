@@ -1,0 +1,14 @@
+---
+# tasks file for roles/Sii_conf
+- name: generat config
+  template:
+     src: templates/deploy_interface.j2
+     dest: files/{{ inventory_hostname}}_gen_config
+ 
+
+- name: push conf
+  ios_config:
+      src: files/{{ inventory_hostname}}_gen_config
+  become: yes
+  tags:
+    - push

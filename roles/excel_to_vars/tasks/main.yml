@@ -1,0 +1,5 @@
+---
+# tasks file for roles/excel_to_vars
+- name: Mise en variables du fichier XLSX 
+  xls_to_facts:
+    src: "{{ inventory_hostname }}.xlsx"

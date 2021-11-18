@@ -1,0 +1,10 @@
+---
+- name: Postcheck playbook
+  hosts: sii_routers
+  connection: network_cli
+  gather_facts: no
+
+
+
+  roles:
+    - Post_checks

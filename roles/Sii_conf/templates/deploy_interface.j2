@@ -1,0 +1,7 @@
+{% for line in spreadsheet_Interfaces %}
+
+interface {{ line.Name }}
+ip address {{ line.Add }} {{ line.Mask  }}
+no sh
+
+{% endfor %}

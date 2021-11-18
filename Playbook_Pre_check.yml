@@ -1,0 +1,10 @@
+---
+- name: Precheck playbook
+  hosts: sii_routers
+  connection: network_cli
+  gather_facts: no
+
+
+
+  roles:
+    - Pre_checks

@@ -1,0 +1,11 @@
+---
+- name: Rollback playbook
+  hosts: sii_routers
+  connection: network_cli
+  gather_facts: no
+
+
+
+  roles:
+     - excel_to_vars
+     - Sii_Rollback
